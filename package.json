@@ -56,15 +56,19 @@
     "webpack-dev-server": "^4.7.4"
   },
   "consolePlugin": {
-    "name": "console-plugin-template",
+    "name": "packet-capture-plugin",
     "version": "0.0.1",
-    "displayName": "OpenShift Console Plugin Template",
-    "description": "Template project for OpenShift console plugins. Edit package.json to change this message and the plugin name.",
+    "displayName": "OpenShift Console Packet Capture Status",
+    "description": "Simple plugin for monitoring Packet Capture jobs",
     "exposedModules": {
       "ExamplePage": "./components/ExamplePage"
     },
     "dependencies": {
       "@console/pluginAPI": "*"
     }
+  },
+  "exposedModules": {
+    "ExamplePage": "./components/ExamplePage",
+    "ExampleTab": "./components/ExampleTab"
   }
 }
