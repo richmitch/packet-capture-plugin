@@ -61,7 +61,8 @@
     "displayName": "OpenShift Console Packet Capture Status",
     "description": "Simple plugin for monitoring Packet Capture jobs",
     "exposedModules": {
-      "ExamplePage": "./components/ExamplePage"
+      "ExamplePage": "./components/ExamplePage",
+      "ExampleTab": "./components/ExampleTab"
     },
     "dependencies": {
       "@console/pluginAPI": "*"
