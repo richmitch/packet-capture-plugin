@@ -3,16 +3,16 @@
     "type": "console.page/route",
     "properties": {
       "exact": true,
-      "path": "/example",
-      "component": { "$codeRef": "ExamplePage" }
+      "path": "/packet-capture",
+      "component": { "$codeRef": "PacketCapturePage" }
     }
   },
   {
     "type": "console.navigation/href",
     "properties": {
-      "id": "example",
-      "name": "Plugin Example",
-      "href": "/example",
+      "id": "packet-capture",
+      "name": "Packet Capture",
+      "href": "/packet-capture",
       "perspective": "admin",
       "section": "home"
     }

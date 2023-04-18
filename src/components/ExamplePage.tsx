@@ -11,7 +11,7 @@ import {
 } from '@patternfly/react-core';
 import './example.css';
 
-export default function ExamplePage() {
+export default function PacketCapturePage() {
   return (
     <>
       <Helmet>
