@@ -65,7 +65,7 @@
       "ExampleTab": "./components/ExampleTab"
     },
     "dependencies": {
-      "@console/pluginAPI": "/*"
+      "@console/pluginAPI": "*"
     }
   },
   "exposedModules": {
