@@ -21,7 +21,7 @@
     "type": "console.tab/horizontalNav",
     "properties": {
       "page": {
-        "name": "Example Tab",
+        "name": "Packet Capture",
         "href": "example"
       },
       "model": {
@@ -29,7 +29,7 @@
         "version": "v1",
         "kind": "Pod"
       },
-      "component": { "$codeRef": "ExampleTab" }
+      "component": { "$codeRef": "PacketCaptureTab" }
     }
   }
 ]

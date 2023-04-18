@@ -62,7 +62,7 @@
     "description": "Simple plugin for monitoring Packet Capture jobs",
     "exposedModules": {
       "PacketCapturePage": "./components/PacketCapturePage",
-      "ExampleTab": "./components/ExampleTab"
+      "PacketCaptureTab": "./components/PacketCaptureTab"
     },
     "dependencies": {
       "@console/pluginAPI": "*"
@@ -70,6 +70,6 @@
   },
   "exposedModules": {
     "PacketCapturePage": "./components/PacketCapturePage",
-    "ExampleTab": "./components/ExampleTab"
+    "PacketCaptureTab": "./components/PacketCaptureTab"
   }
 }
