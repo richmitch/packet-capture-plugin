@@ -7,10 +7,42 @@ import {
   TextContent,
   Title,
 } from '@patternfly/react-core';
+
+import {
+  ApplicationPage
+} from "./ApplicationPage"
+
 import { HorizontalNav } from '@openshift-console/dynamic-plugin-sdk';
 import './example.css';
 
 export default function PacketCapturePage() {
+
+  const ApplicationTabPage: React.FC<ApplicationTabPageProps> = () => (
+    <ApplicationPage 
+//      cv={cv} 
+      autoFocus={false} 
+      showTitle={false} />
+  );
+
+//  export const ClusterOperatorTabPage: React.FC<ClusterOperatorTabPageProps> = ({ obj: cv }) => (
+//    <ClusterOperatorPage cv={cv} autoFocus={false} showTitle={false} />
+//  );
+
+type ApplicationTabPageProps = {
+//  obj: ClusterVersionKind;
+};
+  
+  const Captures: React.FC = () => (
+    <div>
+      <h1>This will show a table of Packet Capture instances and their status</h1>
+    </div>
+  );
+
+  const Storage: React.FC = () => (
+    <div>
+      <h1>This will show cards showing the current capacity and usage of the storage used by the Packet Capture</h1>
+    </div>
+  );
 
   const Disclaimer: React.FC = () => (
     <div>
@@ -26,30 +58,18 @@ export default function PacketCapturePage() {
     </div>
   );
 
-  const Applications: React.FC = () => (
-    <div>
-      <h1>This will show a table of Applications that have Packet Capture deployed</h1>
-    </div>
-  );
-  
-  const Captures: React.FC = () => (
-    <div>
-      <h1>This will show a table of Packet Capture instances and their status</h1>
-    </div>
-  );
-
-  const Storage: React.FC = () => (
-    <div>
-      <h1>This will show cards showing the current capacity and usage of the storage used by the Packet Capture</h1>
-    </div>
-  );
-
   const pages = [
     {
       href: 'applications',
       name: 'Applications',
-      component: Applications,
+      component: ApplicationTabPage,
     },
+//    {
+//      href: 'clusteroperators',
+      // t(ClusterOperatorModel.labelPluralKey)
+//      nameKey: ClusterOperatorModel.labelPluralKey,
+//      component: ClusterOperatorTabPage,
+//    },
     {
       href: 'captures',
       name: 'Captures',

@@ -16,20 +16,5 @@
       "perspective": "admin",
       "section": "observe"
     }
-  },
-  {
-    "type": "console.tab/horizontalNav",
-    "properties": {
-      "page": {
-        "name": "Packet Capture",
-        "href": "example"
-      },
-      "model": {
-        "group": "core",
-        "version": "v1",
-        "kind": "Pod"
-      },
-      "component": { "$codeRef": "PacketCaptureTab" }
-    }
   }
 ]

@@ -1,8 +1,8 @@
 {
-  "name": "console-plugin-template",
+  "name": "packet-capture-plugin",
   "version": "0.0.1",
   "private": true,
-  "repository": "git@github.com:spadgett/console-plugin-template.git",
+  "repository": "https://github.com/richmitch/packet-capture-plugin",
   "license": "Apache-2.0",
   "scripts": {
     "clean": "rm -rf dist",
@@ -61,15 +61,13 @@
     "displayName": "OpenShift Console Packet Capture Status",
     "description": "Simple plugin for monitoring Packet Capture jobs",
     "exposedModules": {
-      "PacketCapturePage": "./components/PacketCapturePage",
-      "PacketCaptureTab": "./components/PacketCaptureTab"
+      "PacketCapturePage": "./components/PacketCapturePage"
     },
     "dependencies": {
       "@console/pluginAPI": "*"
     }
   },
   "exposedModules": {
-    "PacketCapturePage": "./components/PacketCapturePage",
-    "PacketCaptureTab": "./components/PacketCaptureTab"
+    "PacketCapturePage": "./components/PacketCapturePage"
   }
 }
